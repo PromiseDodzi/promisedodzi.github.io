@@ -102,15 +102,20 @@ body{
   text-align: left;
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 18px;
-  align-items: center;
+  column-gap: 18px;
+  row-gap: 0;
+  align-items: start;
 }
 .profile-pic{
   width: 120px;
   height: 120px;
-  border-radius: 6px;
+  border-radius: 50%;
   object-fit: cover;
   border: 1px solid rgba(0,0,0,0.06);
+}
+#right-column p {
+  font-size: 1.1em;
+  margin-top: 0;
 }
 .hero h2{
   margin:0 0 8px 0;
