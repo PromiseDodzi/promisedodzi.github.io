@@ -18,6 +18,7 @@ body{
   line-height:1.5;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+  padding-top: 80px; /* Added to account for fixed header height */
 }
 
 /* accessible skip link */
@@ -46,6 +47,10 @@ body{
   background: var(--header-bg);
   color: #fff;
   padding: 18px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .header-inner{
   max-width: var(--max-width);
@@ -211,14 +216,20 @@ h2{font-size:1.05rem;margin-top:0}
 .research-focus {
   background: var(--bg);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 24px; /* Matched hero section padding */
   box-shadow: 0 6px 18px rgba(20,20,20,0.06);
   margin-top: 28px;
+  text-align: center; /* Center content within the section */
 }
 .research-focus img {
-  max-width: 100%;
+  max-width: 40%; /* Control image size */
   height: auto;
-  border-radius: var(--radius);
+  border-radius: 15px; /* More rounded edges */
+  background-color: var(--bg); /* White background */
+  padding: 10px; /* Padding around the image */
+  box-shadow: 0 2px 8px rgba(20,20,20,0.04); /* Subtle shadow */
+  display: block; /* For margin auto to work */
+  margin: 20px auto 0 auto; /* Center the image and add top margin */
 }
 
 /* education */
