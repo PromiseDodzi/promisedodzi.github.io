@@ -177,7 +177,7 @@ h2{font-size:1.05rem;margin-top:0}
   box-shadow: 0 4px 14px rgba(20,20,20,0.04);
 }
 .highlights-list{margin:0;padding-left:18px;color:var(--muted)}
-.project, .about-article{background:var(--bg); border-radius:8px; padding:14px; margin-bottom:12px; box-shadow: 0 4px 12px rgba(10,10,10,0.03);}
+.project, .about-article{background:var(--bg); border-radius:var(--radius); padding:24px; margin-bottom:12px; box-shadow: 0 6px 18px rgba(20,20,20,0.06);}
 
 .about-article p {
   text-align: justify;
@@ -258,4 +258,94 @@ h2{font-size:1.05rem;margin-top:0}
 }
 
 
+
+
+
+/* General styling for sections */
+section {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  margin-top: 28px;
+}
+
+/* Specific styling for project articles */
+.project {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(10,10,10,0.03);
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push image to the bottom */
+  height: 100%; /* Ensure all projects take full height of their grid cell */
+}
+
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+  flex-grow: 1; /* Allow paragraph to take available space */
+}
+
+.project img {
+  max-width: 100%; /* Ensure image fits within its container */
+  height: auto;
+  border-radius: 15px; /* Rounded edges for project images */
+  margin-top: 15px; /* Space above the image */
+  display: block; /* For margin auto to work if needed */
+}
+
+/* Adjustments for projects-list to use grid for equal height columns */
+#projects-list {
+  margin-top: 28px;
+}
+
+#projects-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Specific styling for project articles */
+.project {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 28px; /* Space between project cards */
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+}
+
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.project img {
+  max-width: 100%; /* Ensure image fits within its container */
+  height: auto;
+  border-radius: 15px; /* Rounded edges for project images */
+  margin-top: 15px; /* Space above the image */
+  display: block; /* For margin auto to work */
+}
+
+/* Project illustrations */
+.project-illustration {
+  max-width: 100%; /* Control image size */
+  height: auto;
+  border-radius: 15px; /* Rounded edges for project images */
+  margin-top: 15px; /* Space above the image */
+  display: block; /* For margin auto to work */
+  margin-left: auto; /* Center the image */
+  margin-right: auto; /* Center the image */
+}
 
