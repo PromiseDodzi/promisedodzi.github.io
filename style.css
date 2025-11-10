@@ -153,6 +153,10 @@ h2{font-size:1.05rem;margin-top:0}
 .highlights-list{margin:0;padding-left:18px;color:var(--muted)}
 .project, .about-article{background:var(--bg); border-radius:8px; padding:14px; margin-bottom:12px; box-shadow: 0 4px 12px rgba(10,10,10,0.03);}
 
+.about-article p {
+  text-align: justify;
+}
+
 /* publications */
 .pub-list{padding-left:18px;color:var(--muted)}
 
