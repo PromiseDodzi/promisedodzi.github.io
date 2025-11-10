@@ -88,7 +88,8 @@ body{
 }
 
 #lang-switcher {
-  margin-left: 12px;
+  display: flex;
+  gap: 8px;
 }
 
 #lang-switcher button {
