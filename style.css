@@ -116,6 +116,7 @@ body{
 #right-column p {
   font-size: 1.1em;
   margin-top: 0;
+  text-align: justify;
 }
 .hero h2{
   margin:0 0 8px 0;
