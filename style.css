@@ -86,6 +86,25 @@ body{
   text-decoration: underline;
 }
 
+#lang-switcher {
+  margin-left: 12px;
+}
+
+#lang-switcher button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: .95rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+#lang-switcher button:hover {
+  text-decoration: underline;
+}
+
 /* container */
 .container{
   max-width: var(--max-width);

@@ -14,6 +14,10 @@
       <div class="brand">
         <h1 class="brand-title">Promise Dodzi Kpoglu</h1>
       </div>
+      <div id="lang-switcher">
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('fr')">FR</button>
+      </div>
       <nav class="main-nav" role="navigation" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -69,6 +73,81 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+
+    const translations = {
+      en: {
+        aboutTitle: 'About',
+        aboutText: `I received my early education in the Volta Region of Ghana and later earned a Bachelor’s degree in French Language Studies from the Kwame Nkrumah University of
+       Science and Technology (KNUST). I went on to pursue a Master’s degree in Language Sciences at the Université de Lille, where I also completed a PhD in Language 
+       Sciences (Linguistics) in collaboration with Leiden University in the Netherlands. 
+       
+       During my doctoral studies, I worked as a part-time lecturer at the Université de Lille and a graduate research assistant at the Leiden University Centre for 
+       Linguistics (LUCL). After completing my PhD, I joined the University of Ghana as a lecturer, where I taught courses in general and comparative linguistics. 
+       Since January 2023, I have been a research engineer at LLACAN (CNRS, Paris).
+       
+       My research spans both fundamental and computational linguistics. In earlier work, I focused on phonetics, morphology, and syntax, particularly of the Ewe 
+       language, as well as topics in multilingualism and foreign language learning. My current research lies at the intersection of computational and historical 
+       linguistics, where I develop and apply machine learning, deep learning, and probabilistic models to study language evolution and phylogeny. I am particularly 
+       interested in automating historical linguistic pipelines, computational approaches to comparative reconstruction, and diachronic simulations that integrate 
+       data-driven methods with linguistic theory.`,
+        researchInterestsTitle: 'Research interests',
+        researchInterest1: 'Computational historical inference and simulation',
+        researchInterest2: 'Protoform reconstruction and cognate detection',
+        researchInterest3: 'Language contact & loanword detection',
+        researchInterest4: 'Reproducible pipelines for linguistic data processing',
+        professionalProfilesTitle: 'Professional profiles',
+        navHome: 'Home',
+        navAbout: 'About',
+        navPublications: 'Publications',
+        navProjects: 'Projects',
+        navTalks: 'Talks',
+        navContact: 'Contact',
+      },
+      fr: {
+        aboutTitle: 'À propos',
+        aboutText: `J'ai reçu ma première éducation dans la région de la Volta au Ghana et j'ai ensuite obtenu une licence en études de la langue française de l'Université des sciences et technologies Kwame Nkrumah (KNUST). 
+        J'ai ensuite poursuivi avec un master en sciences du langage à l'Université de Lille, où j'ai également obtenu un doctorat en sciences du langage (linguistique) en collaboration avec l'Université de Leiden aux Pays-Bas.
+
+        Pendant mes études doctorales, j'ai travaillé comme chargé de cours à temps partiel à l'Université de Lille et comme assistant de recherche diplômé au Centre de linguistique de l'Université de Leiden (LUCL). 
+        Après avoir terminé mon doctorat, j'ai rejoint l'Université du Ghana en tant que maître de conférences, où j'ai enseigné des cours de linguistique générale et comparative. Depuis janvier 2023, je suis ingénieur de recherche au LLACAN (CNRS, Paris).
+
+        Ma recherche couvre à la fois la linguistique fondamentale et computationnelle. Dans mes travaux antérieurs, je me suis concentré sur la phonétique, la morphologie et la syntaxe, en particulier de la langue Ewe, 
+        ainsi que sur des sujets liés au multilinguisme et à l'apprentissage des langues étrangères. Mes recherches actuelles se situent à l'intersection de la linguistique computationnelle et historique, 
+        où je développe et applique des modèles d'apprentissage automatique, d'apprentissage profond et probabilistes pour étudier l'évolution et la phylogénie du langage. 
+        Je suis particulièrement intéressé par l'automatisation des pipelines linguistiques historiques, les approches computationnelles de la reconstruction comparative et les simulations diachroniques qui intègrent des méthodes basées sur les données avec la théorie linguistique.`,
+        researchInterestsTitle: 'Intérêts de recherche',
+        researchInterest1: 'Inférence et simulation historiques computationnelles',
+        researchInterest2: 'Reconstruction de protoformes et détection de cognats',
+        researchInterest3: 'Contact linguistique et détection d\'emprunts',
+        researchInterest4: 'Pipelines reproductibles pour le traitement des données linguistiques',
+        professionalProfilesTitle: 'Profils professionnels',
+        navHome: 'Accueil',
+        navAbout: 'À propos',
+        navPublications: 'Publications',
+        navProjects: 'Projets',
+        navTalks: 'Présentations',
+        navContact: 'Contact',
+      }
+    };
+
+    function switchLanguage(lang) {
+      document.querySelector('.about-article h2').textContent = translations[lang].aboutTitle;
+      document.querySelector('.about-article p').textContent = translations[lang].aboutText;
+      document.querySelector('.about-article h3:nth-of-type(1)').textContent = translations[lang].researchInterestsTitle;
+      document.querySelector('.about-article ul:nth-of-type(1) li:nth-of-type(1)').textContent = translations[lang].researchInterest1;
+      document.querySelector('.about-article ul:nth-of-type(1) li:nth-of-type(2)').textContent = translations[lang].researchInterest2;
+      document.querySelector('.about-article ul:nth-of-type(1) li:nth-of-type(3)').textContent = translations[lang].researchInterest3;
+      document.querySelector('.about-article ul:nth-of-type(1) li:nth-of-type(4)').textContent = translations[lang].researchInterest4;
+      document.querySelector('.about-article h3:nth-of-type(2)').textContent = translations[lang].professionalProfilesTitle;
+      document.querySelector('.main-nav ul li:nth-of-type(1) a').textContent = translations[lang].navHome;
+      document.querySelector('.main-nav ul li:nth-of-type(2) a').textContent = translations[lang].navAbout;
+      document.querySelector('.main-nav ul li:nth-of-type(3) a').textContent = translations[lang].navPublications;
+      document.querySelector('.main-nav ul li:nth-of-type(4) a').textContent = translations[lang].navProjects;
+      document.querySelector('.main-nav ul li:nth-of-type(5) a').textContent = translations[lang].navTalks;
+      document.querySelector('.main-nav ul li:nth-of-type(6) a').textContent = translations[lang].navContact;
+    }
+  </script>
 </body>
 </html>
