@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects & Publications - Promise Kpoglu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects & Publications — Promise Kpoglu</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Projects and publications of Promise Dodzi Kpoglu — links to GitHub and arXiv." />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects & Publications</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>
-                Here are some of the projects I have been working on. More details will be added soon.
-            </p>
-            <div class="project-placeholder">
-                <h3>Project 1 Title</h3>
-                <p>A brief description of the project will go here.</p>
-            </div>
-            <div class="project-placeholder">
-                <h3>Project 2 Title</h3>
-                <p>A brief description of the project will go here.</p>
-            </div>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>
-                I have shared some of my work as preprints on arXiv. The full list will be available here shortly.
-            </p>
-            <div class="publication-placeholder">
-                <h3>Article 1 Title</h3>
-                <p>Author(s), Year. Link to preprint will be added here.</p>
-            </div>
-            <div class="publication-placeholder">
-                <h3>Article 2 Title</h3>
-                <p>Author(s), Year. Link to preprint will be added here.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Promise Kpoglu</p>
-    </footer>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-title">Projects & Publications</h1>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects & Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section id="projects-list" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects (selected)</h2>
+
+      <article class="project">
+        <h3><a href="https://github.com/PromiseDodzi/comp_methods_dogon" target="_blank" rel="noopener noreferrer">comp_methods_dogon</a></h3>
+        <p>Code and experiments for computational methods applied to the Dogon languages (alignment, simulation, evaluation).</p>
+        <p><strong>Notes:</strong> reproducible notebooks, data ingest scripts, and simulation pipelines.</p>
+      </article>
+
+      <article class="project">
+        <h3><a href="https://github.com/PromiseDodzi/protoform-reconstruction" target="_blank" rel="noopener noreferrer">protoform-reconstruction</a></h3>
+        <p>Models and code for protoform (proto-word) reconstruction experiments, used with curated datasets.</p>
+      </article>
+
+      <article class="project">
+        <h3><a href="https://github.com/PromiseDodzi/loanword_detection" target="_blank" rel="noopener noreferrer">loanword_detection</a></h3>
+        <p>Scripts and models to detect contact-induced lexical borrowing and to flag candidate loanwords in corpora.</p>
+      </article>
+    </section>
+
+    <section id="publications-list" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications & preprints</h2>
+
+      <ol class="pub-list">
+        <li><a href="https://arxiv.org/abs/2506.10614" target="_blank" rel="noopener noreferrer">arXiv:2506.10614 — Computational methods for Dogon</a></li>
+        <li><a href="https://arxiv.org/abs/2508.17923" target="_blank" rel="noopener noreferrer">arXiv:2508.17923 — Protoform reconstruction</a></li>
+        <!-- Add canonical citations here when available -->
+      </ol>
+      <p>If you prefer a machine-readable list (BibTeX or JSON), contact me or see my GitHub repositories for linked citations and data.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year3"></span> Promise Dodzi Kpoglu</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
 </body>
 </html>

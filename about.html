@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Promise Kpoglu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Promise Kpoglu</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="About Promise Dodzi Kpoglu — short bio, research interests and links to profiles." />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects & Publications</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a researcher with a background in linguistics, now focusing on the exciting field of computational linguistics. 
-                My work involves applying computational methods to understand and process human language.
-            </p>
-            <p>
-                You can find more details about my professional background in my CV: <a href="CV_KPOGLU.pdf" target="_blank">Download CV</a>.
-            </p>
-        </section>
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p>
-                My primary research interests lie at the intersection of linguistics and computer science. I am passionate about exploring topics such as:
-            </p>
-            <ul>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Machine Learning for Language</li>
-                <li>Syntactic and Semantic Analysis</li>
-                <li>Corpus Linguistics</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Promise Kpoglu</p>
-    </footer>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-title">Promise Dodzi Kpoglu</h1>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects & Publications</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <article class="about-article">
+      <h2>About</h2>
+      <p>
+        I am a computational linguist working on historical linguistics, language simulation, and computational
+        approaches to comparative reconstruction. My research combines data-driven models, reproducible code,
+        and domain knowledge from field linguistics.
+      </p>
+
+      <h3>Research interests</h3>
+      <ul>
+        <li>Computational historical inference and simulation</li>
+        <li>Protoform reconstruction and cognate detection</li>
+        <li>Language contact & loanword detection</li>
+        <li>Reproducible pipelines for linguistic data</li>
+      </ul>
+
+      <h3>Professional profiles</h3>
+      <ul>
+        <li><a href="https://llacan.cnrs.fr/p_kpoglu_en.php" target="_blank" rel="noopener noreferrer">LLACAN / CNRS profile (CV & bio)</a></li>
+        <li><a href="https://scholar.google.com/citations?user=Z_UFc8AAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0003-3521-4415" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+        <li><a href="https://www.linkedin.com/in/promise-dodzi-kpoglu/?originalSubdomain=fr" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+
+      <h3>Selected publications & preprints</h3>
+      <ul>
+        <li><a href="https://arxiv.org/abs/2506.10614" target="_blank" rel="noopener noreferrer">arXiv:2506.10614 — computational methods for Dogon</a></li>
+        <li><a href="https://arxiv.org/abs/2508.17923" target="_blank" rel="noopener noreferrer">arXiv:2508.17923 — protoform reconstruction</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> Promise Dodzi Kpoglu</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
 </body>
 </html>
