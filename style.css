@@ -207,5 +207,44 @@ h2{font-size:1.05rem;margin-top:0}
   .main-nav ul{flex-wrap:wrap}
 }
 
+/* research focus */
+.research-focus {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  margin-top: 28px;
+}
+.research-focus img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+/* education */
+.education {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  margin-top: 28px;
+}
+.education-entry {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.education-entry img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+.education-entry p {
+  margin: 0;
+}
+
 
 
